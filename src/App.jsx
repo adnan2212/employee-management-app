@@ -1,11 +1,11 @@
 import FirstPage from "./pages/firstPage";
-import SecondPage from "./pages/secondPage";
+// import SecondPage from "./pages/secondPage";
 
 const App = () => {
   return (
     <div>
       <FirstPage />
-      <SecondPage />
+      {/* <SecondPage/> */}
     </div>
   );
 };
