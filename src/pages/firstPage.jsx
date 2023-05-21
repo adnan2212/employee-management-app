@@ -3,7 +3,7 @@ import DatePicker from "react-horizontal-datepicker";
 import {
   CircularProgressbar,
   CircularProgressbarWithChildren,
-  buildStyles,
+  buildStyles
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
@@ -15,6 +15,8 @@ import { Icon } from "@ricons/utils";
 // import Calender from "../assests/img/Calender.svg";
 import Calender from "../assets/img/Calender.svg";
 import Box from "../components/Box";
+import Header from "../Components/header";
+import HourSheet from "../Components/HourSheet";
 
 const firstPage = () => {
   const percentage = 90;
@@ -27,6 +29,7 @@ const firstPage = () => {
 
   return (
     <>
+      <Header userName={"Rajesh Mehta"} />
       {/* DATE PICKER */}
       <h1 className="ml-4 pt-4 text-lg font-bold text-[#0D1829]">
         Select date
@@ -110,7 +113,7 @@ const firstPage = () => {
                   styles={buildStyles({
                     pathColor: "#F77307",
                     trailColor: "#eee",
-                    strokeLinecap: "butt",
+                    strokeLinecap: "butt"
                   })}
                 >
                   {/* Foreground path */}
@@ -119,7 +122,7 @@ const firstPage = () => {
                     text={`${sum}%`}
                     styles={buildStyles({
                       trailColor: "transparent",
-                      strokeLinecap: "butt",
+                      strokeLinecap: "butt"
                     })}
                   />
                 </CircularProgressbarWithChildren>
@@ -135,6 +138,7 @@ const firstPage = () => {
           </div>
         </div>
       </div>
+      <HourSheet />
     </>
   );
 };
