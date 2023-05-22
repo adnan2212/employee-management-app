@@ -33,3 +33,12 @@
   @apply w-60 rounded-none border-b-4 border-none border-purple-500 bg-transparent;
   @apply transition-all duration-500 ease-in-out;
 }
+
+.modal {
+  transition: opacity 0.25s ease;
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}

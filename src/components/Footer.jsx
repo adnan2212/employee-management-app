@@ -4,6 +4,8 @@ import message from "../assets/img/message.svg";
 import profile from "../assets/img/profile.svg";
 import { PlusCircleFilled } from "@ricons/antd";
 import { Icon } from "@ricons/utils";
+import Modal from "./Modal";
+
 const Footer = () => {
   return (
     <div className="mt-auto flex h-24 items-center justify-evenly">
@@ -16,9 +18,7 @@ const Footer = () => {
         <p>Message</p>
       </span>
       <span className="mb-4 flex w-8 flex-col items-center">
-        <Icon color="blue" size={45}>
-          <PlusCircleFilled />
-        </Icon>
+        <Modal />
       </span>
       <span className="flex w-8 flex-col items-center">
         <img src={calender} />
