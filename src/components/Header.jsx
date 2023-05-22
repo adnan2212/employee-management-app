@@ -1,6 +1,7 @@
-import { MdNotificationsOutline, MdMenu } from "@ricons/ionicons4";
+import { MdNotificationsOutline } from "@ricons/ionicons4";
 import { Icon } from "@ricons/utils";
 import Vector from "../assets/img/Vector.png";
+import DropdownMenu from "./DropdownMenu";
 
 const Header = ({ userName }) => {
   return (
@@ -11,7 +12,9 @@ const Header = ({ userName }) => {
       <div className="ml-3 pt-6 text-white">
         <img className="absolute left-0 top-0" src={Vector} />
         <p className="font-sans text-xs font-light opacity-80">Hello,</p>
-        <p className="font-sans text-2xl font-semibold">{userName}</p>
+        <p className="color-text font-sans text-2xl font-semibold">
+          {userName}
+        </p>
       </div>
       <div className="flex  items-center justify-between pt-5">
         <span className="mx-6">
@@ -22,7 +25,7 @@ const Header = ({ userName }) => {
 
         <span className="mr-3">
           <Icon color="white" size={20}>
-            <MdMenu />
+            <DropdownMenu />
           </Icon>
         </span>
       </div>

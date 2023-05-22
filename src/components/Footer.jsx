@@ -2,33 +2,53 @@ import Home from "../assets/img/Home.svg";
 import calender from "../assets/img/calender.svg";
 import message from "../assets/img/message.svg";
 import profile from "../assets/img/profile.svg";
-import { PlusCircleFilled } from "@ricons/antd";
-import { Icon } from "@ricons/utils";
+import team from "../assets/img/team.svg";
+
+import Modal from "./Modal";
+
 const Footer = () => {
   return (
-    <div className="mt-auto flex h-24 items-center justify-evenly">
-      <span className="flex w-8 flex-col items-center ">
-        <img src={Home} />
-        <p>Home</p>
-      </span>
-      <span className="flex w-8 flex-col items-center">
-        <img src={message} />
-        <p>Message</p>
-      </span>
-      <span className="mb-4 flex w-8 flex-col items-center">
-        <Icon color="blue" size={45}>
-          <PlusCircleFilled />
-        </Icon>
-      </span>
-      <span className="flex w-8 flex-col items-center">
-        <img src={calender} />
-        <p>Calender</p>
-      </span>
-      <span className="flex w-8 flex-col items-center">
-        <img src={profile} />
-        <p>Profile</p>
-      </span>
-    </div>
+    <>
+      <div className=" mb-1 mt-auto flex h-24 items-center justify-evenly">
+        <a className="flex w-8  flex-col items-center">
+          <img src={Home} className="" />
+          <p className="scale-100 transition-transform duration-[250ms] hover:scale-[1.15] hover:transition-all hover:duration-[250ms] focus:scale-[1.15] focus:transition-all focus:duration-[250ms] ">
+            Home
+          </p>
+        </a>
+        <span className="flex w-8 flex-col items-center">
+          <img src={team} />
+          <p className="scale-100 transition-transform duration-[250ms] hover:scale-[1.15] hover:transition-all hover:duration-[250ms] focus:scale-[1.15] focus:transition-all focus:duration-[250ms] ">
+            Team
+          </p>
+        </span>
+        <span className="flex w-8 flex-col items-center">
+          <img src={message} />
+          <p className="scale-100 transition-transform duration-[250ms] hover:scale-[1.15] hover:transition-all hover:duration-[250ms] focus:scale-[1.15] focus:transition-all focus:duration-[250ms] ">
+            Message
+          </p>
+        </span>
+        <span className="flex w-8 flex-col items-center">
+          <img src={calender} />
+          <p className="scale-100 transition-transform duration-[250ms] hover:scale-[1.15] hover:transition-all hover:duration-[250ms] focus:scale-[1.15] focus:transition-all focus:duration-[250ms] ">
+            Calender
+          </p>
+        </span>
+        <span className="flex w-8 flex-col items-center">
+          <img src={profile} />
+          <p className="scale-100 transition-transform duration-[250ms] hover:scale-[1.15] hover:transition-all hover:duration-[250ms] focus:scale-[1.15] focus:transition-all focus:duration-[250ms] ">
+            Profile
+          </p>
+        </span>
+      </div>
+      <div className="container">
+        <div className="btnDiv">
+          <span id="dice-btn" className="mb-4 flex w-8 flex-col items-center">
+            <Modal />
+          </span>
+        </div>
+      </div>
+    </>
   );
 };
 

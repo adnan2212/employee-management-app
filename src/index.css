@@ -1,3 +1,82 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* For Search Button, might delete later */
+.input-wrapper {
+  @apply relative flex items-center justify-center gap-5;
+}
+
+.input {
+  @apply h-14 w-14 rounded-full border-none bg-purple-500 px-3 text-lg font-medium text-white shadow-sm outline-none transition duration-500 ease-in-out;
+}
+
+.input::placeholder {
+  @apply text-gray-400;
+}
+
+.icon {
+  @apply absolute right-0 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border-none bg-transparent outline-none transition duration-200 ease-linear;
+}
+
+.icon:focus ~ .input,
+.input:focus {
+  @apply w-60 rounded-none border-b-4 border-none border-purple-500 bg-transparent;
+  @apply transition-all duration-500 ease-in-out;
+}
+
+.input.focused {
+  @apply w-60 rounded-none border-b-4 border-none border-purple-500 bg-transparent;
+  @apply transition-all duration-500 ease-in-out;
+}
+
+/* Modal Css */
+.modal {
+  transition: opacity 0.25s ease;
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
+/* Text Css in Header.jsx */
+.color-text {
+  /* Text As Moving GIF as a color */
+  background-image: url("https://media.giphy.com/media/CKlafeh1NAxz35KTq4/giphy-downsized-large.gif");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Modal Button Css in Footer */
+.btnDiv {
+  position: absolute;
+  right: 50%;
+  transform: translateX(-50%) scale(1);
+  bottom: 1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.btnDiv:hover,
+.btnDiv:focus {
+  transform: translateX(-50%) scale(1.2);
+  transition: all 250ms;
+}
+
+#dice-btn {
+  background-image: url("images/icon-dice.svg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  border: none;
+
+  cursor: pointer;
+}

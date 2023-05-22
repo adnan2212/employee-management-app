@@ -6,12 +6,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <FirstPage />,
+    element: <FirstPage />
   },
   {
     path: "/projects",
-    element: <SecondPage />,
-  },
+    element: <SecondPage />
+  }
 ]);
 
 const App = () => {
