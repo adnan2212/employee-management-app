@@ -1,5 +1,5 @@
 import Vector from "../assets/img/Vector.png";
-import Search from "../assets/img/Search.svg";
+// import Search from "../assets/img/Search.svg";
 
 import IMG from "../assets/img/p2.jpeg";
 import IMG2 from "../assets/img/p4.jpeg";
