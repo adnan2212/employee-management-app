@@ -18,6 +18,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 // import Calender from "../assests/img/Calender.svg";
 import Calender from "../assets/img/calender.svg";
+import SearchBar from "../components/SearchBar";
 
 const secondPage = () => {
   const percentage = 80;
@@ -36,7 +37,7 @@ const secondPage = () => {
         </div>
         <div className="flex  pt-5">
           <span className="mr-3">
-            <img src={Search} />
+            <SearchBar />
           </span>
         </div>
       </div>
