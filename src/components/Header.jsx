@@ -1,6 +1,7 @@
 import { MdNotificationsOutline, MdMenu } from "@ricons/ionicons4";
 import { Icon } from "@ricons/utils";
 import Vector from "../assets/img/Vector.png";
+import DropdownMenu from "./DropdownMenu";
 
 const Header = ({ userName }) => {
   return (
@@ -22,7 +23,7 @@ const Header = ({ userName }) => {
 
         <span className="mr-3">
           <Icon color="white" size={20}>
-            <MdMenu />
+            <DropdownMenu />
           </Icon>
         </span>
       </div>
