@@ -4,7 +4,7 @@ import Search from "../assets/img/Search.svg";
 import IMG from "../assets/img/p2.jpeg";
 import IMG2 from "../assets/img/p4.jpeg";
 import IMG3 from "../assets/img/p5.jpeg";
-import IMG4 from "../assets/img/p6.jpeg";
+// import IMG4 from "../assets/img/p6.jpeg";
 import IMG5 from "../assets/img/p7.jpeg";
 
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import {
   CircularProgressbar,
   CircularProgressbarWithChildren,
-  buildStyles,
+  buildStyles
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
@@ -92,7 +92,7 @@ const secondPage = () => {
                 styles={buildStyles({
                   pathColor: "#F77307",
                   trailColor: "#eee",
-                  strokeLinecap: "butt",
+                  strokeLinecap: "butt"
                 })}
               >
                 {/* Foreground path */}
@@ -101,7 +101,7 @@ const secondPage = () => {
                   text={`${sum}%`}
                   styles={buildStyles({
                     trailColor: "transparent",
-                    strokeLinecap: "butt",
+                    strokeLinecap: "butt"
                   })}
                 />
               </CircularProgressbarWithChildren>
@@ -161,7 +161,7 @@ const secondPage = () => {
                 styles={buildStyles({
                   pathColor: "#F77307",
                   trailColor: "#eee",
-                  strokeLinecap: "butt",
+                  strokeLinecap: "butt"
                 })}
               >
                 {/* Foreground path */}
@@ -170,7 +170,7 @@ const secondPage = () => {
                   text={`${58}%`}
                   styles={buildStyles({
                     trailColor: "transparent",
-                    strokeLinecap: "butt",
+                    strokeLinecap: "butt"
                   })}
                 />
               </CircularProgressbarWithChildren>
@@ -230,7 +230,7 @@ const secondPage = () => {
                 styles={buildStyles({
                   pathColor: "#F77307",
                   trailColor: "#eee",
-                  strokeLinecap: "butt",
+                  strokeLinecap: "butt"
                 })}
               >
                 {/* Foreground path */}
@@ -239,7 +239,7 @@ const secondPage = () => {
                   text={`${33}%`}
                   styles={buildStyles({
                     trailColor: "transparent",
-                    strokeLinecap: "butt",
+                    strokeLinecap: "butt"
                   })}
                 />
               </CircularProgressbarWithChildren>
