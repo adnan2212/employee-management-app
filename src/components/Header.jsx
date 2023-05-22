@@ -12,7 +12,9 @@ const Header = ({ userName }) => {
       <div className="ml-3 pt-6 text-white">
         <img className="absolute left-0 top-0" src={Vector} />
         <p className="font-sans text-xs font-light opacity-80">Hello,</p>
-        <p className="font-sans text-2xl font-semibold">{userName}</p>
+        <p className="color-text font-sans text-2xl font-semibold">
+          {userName}
+        </p>
       </div>
       <div className="flex  items-center justify-between pt-5">
         <span className="mx-6">

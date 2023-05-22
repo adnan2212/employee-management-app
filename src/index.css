@@ -34,6 +34,7 @@
   @apply transition-all duration-500 ease-in-out;
 }
 
+/* Modal Css */
 .modal {
   transition: opacity 0.25s ease;
 }
@@ -41,4 +42,41 @@
 body.modal-active {
   overflow-x: hidden;
   overflow-y: visible !important;
+}
+
+/* Text Css in Header.jsx */
+.color-text {
+  /* Text As Moving GIF as a color */
+  background-image: url("https://media.giphy.com/media/CKlafeh1NAxz35KTq4/giphy-downsized-large.gif");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Modal Button Css in Footer */
+.btnDiv {
+  position: absolute;
+  right: 50%;
+  transform: translateX(-50%) scale(1);
+  bottom: 1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.btnDiv:hover,
+.btnDiv:focus {
+  transform: translateX(-50%) scale(1.2);
+  transition: all 250ms;
+}
+
+#dice-btn {
+  background-image: url("images/icon-dice.svg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  border: none;
+
+  cursor: pointer;
 }
