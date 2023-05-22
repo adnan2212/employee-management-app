@@ -3,9 +3,10 @@ import DatePicker from "react-horizontal-datepicker";
 import {
   CircularProgressbar,
   CircularProgressbarWithChildren,
-  buildStyles
+  buildStyles,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { Link } from "react-router-dom";
 
 /* ICONS */
 import { ArrowForwardOutlined } from "@ricons/material";
@@ -45,7 +46,11 @@ const firstPage = () => {
       </div>
 
       <div>
-        <h1 className="ml-4 pt-4 text-lg font-bold text-[#0D1829]">Projects</h1>
+        <Link to="/projects">
+          <h1 className="ml-4 pt-4 text-lg font-bold text-[#0D1829]">
+            Projects
+          </h1>
+        </Link>
         <div className="flex flex-row flex-wrap lg:flex-wrap-reverse">
           <Box title={"Annual"} content={30} />
           <Box
@@ -113,7 +118,7 @@ const firstPage = () => {
                   styles={buildStyles({
                     pathColor: "#F77307",
                     trailColor: "#eee",
-                    strokeLinecap: "butt"
+                    strokeLinecap: "butt",
                   })}
                 >
                   {/* Foreground path */}
@@ -122,7 +127,7 @@ const firstPage = () => {
                     text={`${sum}%`}
                     styles={buildStyles({
                       trailColor: "transparent",
-                      strokeLinecap: "butt"
+                      strokeLinecap: "butt",
                     })}
                   />
                 </CircularProgressbarWithChildren>
