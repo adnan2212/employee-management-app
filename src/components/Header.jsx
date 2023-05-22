@@ -1,4 +1,4 @@
-import { MdNotificationsOutline, MdMenu } from "@ricons/ionicons4";
+import { MdNotificationsOutline } from "@ricons/ionicons4";
 import { Icon } from "@ricons/utils";
 import Vector from "../assets/img/Vector.png";
 import DropdownMenu from "./DropdownMenu";
