@@ -19,6 +19,7 @@ const App = () => {
     <div>
       <RouterProvider router={appRouter}></RouterProvider>
       <Footer />
+      <Footer />
     </div>
   );
 };
